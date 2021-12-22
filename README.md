@@ -16,3 +16,7 @@ API :
 6. This api will unassign book from Reader.
 
 
+![alt text](./S1.png)
+![alt text](./S2.png)
+![alt text](./S3.png)
+![alt text](./S4.png)
