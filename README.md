@@ -20,3 +20,8 @@ API :
 ![alt text](./S2.png)
 ![alt text](./S3.png)
 ![alt text](./S4.png)
+![alt text](./S5.png)
+![alt text](./S6.png)
+![alt text](./S7.png)
+![alt text](./S8.png)
+![alt text](./S9.png)
