@@ -182,21 +182,22 @@ public class RdaoImp {
 			query.setParameter("readerId", readerId );
 			
 			List<BookHistory> list=query.getResultList();
+			currentSession.clear();
 			
 			if(list.size()>0) {
+			
 				BookHistory oldrecord=list.get(0);
+
+				Date date = Calendar.getInstance().getTime();  
+				DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
+				String strDate = dateFormat.format(date);  
+				oldrecord.setDateOut(strDate);
 			
 
+				currentSession.delete(oldrecord);
+				currentSession.save(oldrecord);
+				System.out.println("Updateing.....");
 				currentSession.clear();
-
-			Date date = Calendar.getInstance().getTime();  
-            DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd hh:mm:ss");  
-            String strDate = dateFormat.format(date);  
-            oldrecord.setDateOut(strDate);
-			
-			
-            sessionFactory.getCurrentSession().update(oldrecord);
-			currentSession.clear();
 			
 			}
 		}

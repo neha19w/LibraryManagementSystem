@@ -15,19 +15,13 @@ public class BookHistory {
 		@GeneratedValue(strategy=GenerationType.IDENTITY)
 		int id;	
 	
-	String readerName;
+
 	String dateOut;
 	String dateIn;
 	int bookId;
 	int readerId;
 	
 	
-	public String getReaderName() {
-		return readerName;
-	}
-	public void setReaderName(String readerName) {
-		this.readerName = readerName;
-	}
 	public String getDateOut() {
 		return dateOut;
 	}
